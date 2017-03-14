@@ -10,6 +10,7 @@ def index(request):
         'items': items,
         })
 
+
 def item_detail(request, id):
     try:
         item = Item.objects.get(id=id)
